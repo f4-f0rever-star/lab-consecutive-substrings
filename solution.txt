@@ -1,2 +1,21 @@
 Please add your pseudocode to this file
+Function consecutiveSubstrings(strings)
+    Create an empty list(array) called result
+    For each position i from 0 to length of string - 1
+        Set current substring to empty string
+        For each position j from i to length of string -1
+            Add character at position j to current substring 
+            Add current substring to result list 
+        End For
+    End For
+    Return result
+End Function
+
 And a written explanation of your solution
+- Create a list to store results
+- Pick the starting line using loop 
+- Make substrings from the starting letter
+    - use a variable `current` to store the substring we are making
+    - each time a new letter is added, push current into the result list
+- Repeat for all starting letters
+- Return all substrings 
